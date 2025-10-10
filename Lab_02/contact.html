@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="My Web Technologies lab 02 tasks for CS 224L at UET Peshawar.">
+    <meta name="keywords" content="UET Peshawar, CS224L, Web Technologies, Portfolio, Student Projects">
+    <meta name="author" content="Muhammad Furqan">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./shedule.html">Shedule Page</a></li>
+                <li><a href="./navigation.html">Navigation Menu</a></li>
+                <li><a href="./registration.html">Registration Form</a></li>
+                <li><a href="./profile.html">Profie Page</a></li>
+                <li><b>Contact Us</b></li>
+    </header>
+
+    <h1>Contact Me</h1>
+    <p>Send me a message simple using this simple form:</p>
+
+    <form action="https://formspree.io/f/mdkwwlez" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="_replyto" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next"
+            value="https://github.com/furqan934/24PWBCS1085-WT-Fall25/Lab_02/thank-you.html">
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="result"></p>
+
+    <hr>
+    <p><a href="index.html">Back to Home</a></p>
+
+</body>
+
+</html>

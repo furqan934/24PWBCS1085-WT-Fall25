@@ -1,0 +1,29 @@
+# My Web Technologies Portfolio
+
+This repository contains my lab exercises for **CS 224L – Web Technologies**,  
+Department of Computer Science,  
+**University of Engineering & Technology, Peshawar.**
+
+---
+
+## 🌐 Live GitHub Pages Link
+Visit my deployed portfolio website here:  
+👉 [https://github.com/furqan934/24PWBCS1085-WT-Fall25](https://github.com/furqan934/24PWBCS1085-WT-Fall25)
+
+---
+
+## 📚 Contents
+- **index.html** – Portfolio Landing Page  
+- **profile.html** – Personal Profile Page  
+- **shedule.html** – Course Schedule Table  
+- **navigation.html** – Navigation Menu  
+- **registration.html** – Student Registration Form  
+- **404.html** – Custom Error Page  
+
+---
+
+## 👨‍💻 Author
+**Student Name:** Muhammad Furqan 
+**Registration No:** 24PWBCS1085 
+**Instructor:** Mr. Mohammad  
+**Course:** CS 224L – Web Technologies
