@@ -1,6 +1,6 @@
-# My Web Technologies Portfolio
+# My Web Technologies lab 02 README File
 
-This repository contains my lab exercises for **CS 224L – Web Technologies**,  
+This repository contains my WT lab exercises for **CS 224L – Web Technologies**,  
 Department of Computer Science,  
 **University of Engineering & Technology, Peshawar.**
 
@@ -13,17 +13,29 @@ Visit my deployed portfolio website here:
 ---
 
 ## 📚 Contents
-- **index.html** – Portfolio Landing Page  
+- **index.html** – Portfolio lending Page  
 - **profile.html** – Personal Profile Page  
 - **shedule.html** – Course Schedule Table  
 - **navigation.html** – Navigation Menu  
 - **registration.html** – Student Registration Form  
-- **404.html** – Custom Error Page  
+- **404.html** – custom error Page 
+- **contct.html** - contact form Page 
 
 ---
+
+## Deployment Documentation – CS224L Web Technologies
+--------------------------------------------------
+
+1. Created GitHub repository named '24PWBCS1085-WT-Fall25'
+2. Added all HTML files of LAb_02 directry  (index.html, profile.html, contact.html, etc.)
+3. Enabled GitHub Pages under Settings > Pages
+4. Selected main branch and root folder as source
+5. GitHub Pages URL: https://furqan934.github.io/24PWBCS1085-WT-Fall25/Lab_02
+6. Verified all links, images, and forms working correctly
+7. Successfully tested contact form redirect to thankyou.html
 
 ## 👨‍💻 Author
 **Student Name:** Muhammad Furqan 
 **Registration No:** 24PWBCS1085 
-**Instructor:** Mr. Mohammad  
+**Instructor:** Sir  Mohammad  
 **Course:** CS 224L – Web Technologies
