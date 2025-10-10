@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration form</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="navigation.html" class="nav-link">Navigation Menu</a></li>
+            <li><a href="registration.html" class="nav-link">Registration Form</a></li>
+            <li><a href="https://www.uet.edu.pk" target="_blank" class="nav-link">UET Website</a></li>
+            <li><a href="https://github.com/your-github-username" target="_blank" class="nav-link">GitHub Profile</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post">
+        <label for="name">Full name: </label> <br>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label for="reg_no">Reg Number:</label><br>
+        <input type="text" name="reg_no" id="reg_no" required>
+        <br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" required>
+        <br><br>
+        <label for="cources">Select Courece:</label><br>
+
+        <!-- selecting courcs -->
+        <select name="cources" id="cources" required>
+            <option value="bs_cs">BS Computer Science</option>
+            <option value="bs_se">BS Software Engineering</option>
+            <option value="bs_it">BS Information Technology</option>
+            <option value="bs_ai">BS Artificial Intelligence</option>
+            <option value="bs_ds">BS Data Science</option>
+        </select>
+        <br><br>
+        <!-- selecting semester -->
+        <label for="semester">Semester:</label><br>
+        <input type="radio" name="semester" id="1st" value="1st" required>
+        <label for="1st">1st</label><br>
+        <input type="radio" name="semester" id="2nd" value="2nd" required>
+        <label for="2nd"> 2nd</label><br>
+        <input type="radio" name="semester" id="3rd" value="3rd" required>
+        <label for="3rd">3rd</label>
+        <br>
+        <input type="radio" name="semester" id="4th" value="4th" required>
+        <label for="4th">4th</label>
+        <br><br>
+
+        <!-- agree to terms and condition -->
+        <label for="terms">I agree to the terms and conditions.</label>
+        <input type="checkbox" name="terms" id="terms" required>
+        <br><br>
+
+        <!-- adding submit button -->
+        <button type="submit" name="submit" value="register"> Submit</button>
+
+
+</body>
+
+</html>
