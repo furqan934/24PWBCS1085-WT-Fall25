@@ -1,0 +1,41 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* 1.Rounded corners and circular images
+• Image borders and shadows */
+.gallery img {
+  width: 180px;
+  height: 180px;
+  border-radius: 15px; /* rounded corners */
+  border: 3px solid #ddd; /* border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* shadow */
+  transition: transform 0.4s, filter 0.4s;  /*transition */
+}
+
+/* 3. circular img */
+.circle{
+    border-radius: 50%;
+}
+
+
+/* 4.hover effet and filter applied to images */
+.gallery img:hover{
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* 5.images overlay with text*/
+.grayscale{
+    filter: grayscale(100%);
+}

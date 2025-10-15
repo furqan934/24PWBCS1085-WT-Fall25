@@ -1,0 +1,50 @@
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+.font-lobster {
+  font-family: "Lobster", cursive;
+}
+.font-opensans {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*various font sizes with diffent units  */
+#sizes{
+    background: #fffccc;
+    padding: 10px;
+}
+.sizes span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.sizes .px {
+  font-size: 16px;
+}
+.sizes .em {
+  font-size: 1.5em;
+}
+.sizes .rem {
+  font-size: 2rem;
+}
+.sizes .percent {
+  font-size: 120%;
+}
+
+/* text allignemnt exmples */
+
+.allign-left{
+    text-align: left;
+}
+.allign-center{
+    text-align: center;
+}
+.allign-right{
+    text-align: right;
+}
+
+/* text decoaration */
+.text-decor{
+    text-transform: uppercase;
+    text-decoration: underline wavy blue;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Form Styling</title>
+    <link rel="stylesheet" href="../styles/form.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male" name="gender">male</option>
+                <option value="female" name="gender">female</option>
+                <option value="other" name="gender">other</option>
+            </select><br><br>
+
+
+            <button type="button" onclick="submitForm()">Register</button>
+        </form>
+
+        <p class="success-message" id="success"></p>
+    </div>
+
+    <script>
+       function submitForm() {
+      // get values by id 
+      let name = document.getElementById("name");
+      let email = document.getElementById("email");
+      let gender = document.getElementById("gender");
+      let success = document.getElementById("success");
+
+      // reset error styles
+      name.classList.remove("error");
+      email.classList.remove("error");
+      gender.classList.remove("error");
+      success.innerHTML = "";
+
+      // simple validation
+      if (name.value === "" || email.value === "" || gender.value === "") {
+        if (name.value === "") name.classList.add('error');
+        if (email.value === "") email.classList.add('error');
+        if (gender.value === "") gender.classList.add('error');
+        success.innerHTML = "Please fill all fields!";
+        success.style.color = "red";
+      } else {
+        success.innerHTML = "Registration Successful!";
+        success.style.color = "green";
+      }
+    }
+    </script>
+
+</body>
+
+</html>

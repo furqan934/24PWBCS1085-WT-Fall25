@@ -1,0 +1,64 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* card container for all cards */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  border: 1px solid gray;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+/* 3.hover on cards transformation */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*4 card image tiltle */
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.card h3 {
+  color: darkblue;
+  margin: 10px 0;
+}
+.card p {
+  color: #666;
+  font-size: 14px;
+  margin: 8px 0;
+}
+.price {
+  font-weight: bold;
+  color: #4caf50;
+  margin: 8px 0;
+}
+
+/* 5.call to acction button  */
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}

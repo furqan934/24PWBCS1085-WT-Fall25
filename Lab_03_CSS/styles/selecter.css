@@ -1,0 +1,80 @@
+/* 5 basic selecter */
+body {
+  margin: auto;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #f5f5f5;
+}
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: darkblue;
+}
+
+p {
+  line-height: 1.5;
+}
+/* class selecter */
+.para-01 {
+  color: green;
+  font-size: 18px;
+}
+/* id selecter */
+#main-heading {
+  text-transform: uppercase;
+}
+
+/* 3 attribute selecters */
+input[type="text"] {
+  border: 2px solid blue;
+}
+input[type="email"] {
+  border: 2px solid red;
+}
+input[type="password"] {
+  border: 2px solid black;
+}
+
+/* 4 combinatrers selecters*/
+/* decendent sel */
+div p {
+  color: purple;
+}
+
+/* child sel  */
+div > p {
+  font-style: italic;
+}
+
+/* adjacent sibling sel */
+h1 + p {
+  color: teal;
+}
+
+/* general sibling sel */
+p ~ ul {
+  background: #e0e0e0;
+}
+
+
+/* 5 sedu class sel */
+a:hover{
+    color: orange;
+}
+a:visited{
+    color: violet;
+}
+input:focus{
+    background: #fffccc;
+}
+li:first-child{
+    font-weight: bold;
+}
+
+/* 2 sedu elements */
+h1::first-letter{
+    color: red;
+}
+ul::first-line{
+    color: red;
+}

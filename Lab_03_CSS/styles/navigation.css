@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f4f6f9;
+}
+
+.navbar {
+  background-color: #1e3a8a;
+}
+
+/* horizental for the default screen */
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+/*2. Hover States */
+.nav-menu li a:hover {
+  background-color: #3b82f6;
+}
+/*2.active states */
+.nav-menu li a.active {
+  background-color: #2563eb;
+}
+
+/* #.drop down menue style  */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1d4ed8;
+  min-width: 160px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #3b82f6;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  /*4.this is design which move the navbar to the verticale side.*/
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-menu li a {
+    width: 100%;
+    padding: 12px;
+    border-bottom: 1px solid #444;
+  }
+  .dropdown-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    border-radius: 0;
+  }
+}

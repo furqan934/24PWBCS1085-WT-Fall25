@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+h2 {
+  color: darkblue;
+  margin-bottom: 20px;
+}
+
+/* gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* common box style for all */
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: transform 0.6s ease,background-color 0.3s ease;
+}
+
+/* 1. Transform rotation of the box with  hover effect */
+.box.rotate:hover {
+  transform: rotate(90deg);
+  background-color: #2563eb;
+}
+
+/* 2. Transform scaling of the box with  hover effect */
+.box.scale:hover {
+  transform: scale(1.2);
+  background-color: #2563eb;
+}
+
+/* 3. Transform translation of the box with  hover effect */
+.box.translate:hover {
+  transform: translate(30px, 20px);
+  background-color: #2563eb;
+}
+
+/* 3. Transform with 3d rotation  of the box with  hover effect */
+.box.rotated3d:hover {
+  transform: rotateY(180deg);
+  background-color: #2563eb;
+}
+
+
+.box.origin {
+  transform-origin: top left;
+}
+/* 4. Transform with origin trasformation  of the box with  hover effect */
+.box.origin:hover {
+  transform: rotate(45deg);
+  background-color: #2563eb;
+}
+
+.box.combo:hover {
+  transform: rotate(20deg) scale(1.2) translate(20px, 10px);
+  background-color: #2563eb;
+}

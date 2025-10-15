@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+  margin: 0;
+  background-color: #f5f5f5;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.gallery {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* css for all box */
+.box {
+  height: 200px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* 1.solid color bg */
+.solid {
+  background-color: steelblue;
+}
+
+/* 2.img in background with repaeat */
+.image-repeat {
+  background-image: url("../images/background/bg-img.jpg");
+  background-repeat: repeat;
+}
+
+/*3.image cover */
+.image-cover {
+  background-image: url("../images/background/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 4.linearGradient */
+.linear-gradient {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+/* 5.Radial Gradient */
+.radial-gradient{
+    background: radial-gradient(circle, #00c6ff, #0072ff);
+}
+/* 6 multi background layesr  */
+.multi-bg{
+    background-image: url('../images/background/bg-img.jpg'), linear-gradient(130deg, rgba(0,0,0,0.7), rgba(255,255,255,0.3));
+      background-blend-mode: overlay;
+      background-repeat: no-repeat;
+      background-size: 100px, cover;
+      background-position: center;
+}
+
+/* blend mode bg */
+.blend{
+    background-image: url("../images/background/bg-img-02.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+}

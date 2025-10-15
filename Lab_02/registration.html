@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student registration form</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="shedule.html">Shedule Page</a></li>
                 <li><a href="navigation.html" class="nav-link">Navigation Menu</a></li>
-                <li><b>Registration Form</b></li>
+                <li class="active-page-link"><b>Registration Form</b></li>
                 <li><a href="./profile.html">Profie Page</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
                 <li><a href="https://www.uet.edu.pk" target="_blank" class="nav-link">UET Website</a></li>
@@ -27,54 +28,46 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <h1>Student Registration Form</h1>
+        <form action="#" method="post">
+            <label for="name">Full name: </label> 
+            <input type="text" name="name" id="name" required>
+            <label for="reg_no">Reg Number:</label>
+            <input type="text" name="reg_no" id="reg_no" required>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <label for="cources">Select Courece:</label>
 
-    <h1>Student Registration Form</h1>
-    <form action="#" method="post">
-        <label for="name">Full name: </label> <br>
-        <input type="text" name="name" id="name" required>
-        <br><br>
-        <label for="reg_no">Reg Number:</label><br>
-        <input type="text" name="reg_no" id="reg_no" required>
-        <br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email" required>
-        <br><br>
-        <label for="password">Password:</label><br>
-        <input type="password" name="password" id="password" required>
-        <br><br>
-        <label for="cources">Select Courece:</label><br>
+            <!-- selecting courcs -->
+            <select name="cources" id="cources" required>
+                <option value="bs_cs">BS Computer Science</option>
+                <option value="bs_se">BS Software Engineering</option>
+                <option value="bs_it">BS Information Technology</option>
+                <option value="bs_ai">BS Artificial Intelligence</option>
+                <option value="bs_ds">BS Data Science</option>
+            </select>
+            <!-- selecting semester -->
+            <label for="semester">Semester:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="semester" value="1st" required> 1st</label>
+                <label><input type="radio" name="semester" value="2nd" required> 2nd</label>
+                <label><input type="radio" name="semester" value="3rd" required> 3rd</label>
+                <label><input type="radio" name="semester" value="4th" required> 4th</label>
+            </div>
 
-        <!-- selecting courcs -->
-        <select name="cources" id="cources" required>
-            <option value="bs_cs">BS Computer Science</option>
-            <option value="bs_se">BS Software Engineering</option>
-            <option value="bs_it">BS Information Technology</option>
-            <option value="bs_ai">BS Artificial Intelligence</option>
-            <option value="bs_ds">BS Data Science</option>
-        </select>
-        <br><br>
-        <!-- selecting semester -->
-        <label for="semester">Semester:</label><br>
-        <input type="radio" name="semester" id="1st" value="1st" required>
-        <label for="1st">1st</label><br>
-        <input type="radio" name="semester" id="2nd" value="2nd" required>
-        <label for="2nd"> 2nd</label><br>
-        <input type="radio" name="semester" id="3rd" value="3rd" required>
-        <label for="3rd">3rd</label>
-        <br>
-        <input type="radio" name="semester" id="4th" value="4th" required>
-        <label for="4th">4th</label>
-        <br><br>
+            <div class="checkbox-group">
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">I agree to the terms and conditions.</label>
+            </div>
 
-        <!-- agree to terms and condition -->
-        <label for="terms">I agree to the terms and conditions.</label>
-        <input type="checkbox" name="terms" id="terms" required>
-        <br><br>
-
-        <!-- adding submit button -->
-        <button type="submit" name="submit" value="register"> Submit</button>
-    </form><br>
-    <p><a href="index.html">Back to Home</a></p>
+            <!-- adding submit button -->
+            <button type="submit" name="submit" value="register"> Submit</button>
+        </form><br>
+        <p><a href="index.html">Back to Home</a></p>
+    </main>
 </body>
 
 </html>
