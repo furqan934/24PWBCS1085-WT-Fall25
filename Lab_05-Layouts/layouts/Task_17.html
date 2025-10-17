@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Utility Classes</title>
+    <link rel="stylesheet" href="../styles/Task_17.css">
+</head>
+<body>
+    <header class="bg-primary text-center p-2 shadow">
+    <h1>Responsive Utility Classes Demo</h1>
+  </header>
+
+  <main class="p-3">
+    <!-- Visibility -->
+    <section class="card mb-3">
+      <h2 class="text-center">Visibility Utilities</h2>
+      <p class="show-mobile badge">Visible only on <strong>Mobile</strong></p>
+      <p class="show-tablet badge">Visible only on <strong>Tablet</strong></p>
+      <p class="show-desktop badge">Visible only on <strong>Desktop</strong></p>
+    </section>
+
+    <!-- Spacing -->
+    <section class="card mb-3">
+      <h2 class="text-center">Responsive Spacing</h2>
+      <div class="p-1 bg-primary text-white rounded">Padding Small (p-1)</div>
+      <div class="p-2 bg-secondary text-white rounded mt-1">Padding Medium (p-2)</div>
+      <div class="p-3 bg-dark text-white rounded mt-1">Padding Large (p-3)</div>
+    </section>
+
+    <!--Text Alignment -->
+    <section class="card mb-3">
+      <h2 class="text-center">Responsive Text Alignment</h2>
+      <p class="text-left text-md-center text-lg-right bg-light p-2 rounded shadow-sm">
+        Resize the window — this text changes alignment!  
+        Left (Mobile) → Center (Tablet) → Right (Desktop)
+      </p>
+    </section>
+
+    <!-- Flexbox -->
+    <section class="card">
+      <h2 class="text-center">Flexbox Utilities</h2>
+      <div class="flex-row flex-md-column flex-lg-row gap-md bg-light p-2 rounded shadow-sm">
+        <div class="box bg-primary text-white p-1 rounded">Box 1</div>
+        <div class="box bg-secondary text-white p-1 rounded">Box 2</div>
+        <div class="box bg-dark text-white p-1 rounded">Box 3</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-2 mt-3 shadow">
+    <p>&copy; 2025 Responsive Utility Classes</p>
+  </footer>
+</body>
+</html>

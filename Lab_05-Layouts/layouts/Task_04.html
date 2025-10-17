@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Navigation System</title>
+<link rel="stylesheet" href="../styles/Task_04.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo-content">MySite</div>
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="./diplay.html">Task-1</a></li>
+       <li><a href="./magzin-float.html">Task-2</a></li>
+      <li class="dropdown">
+        <a href="#">Other Tasks ▼</a>
+        <ul class="dropdown-content">
+             <li><a href="./position-layout.html">Task-3</a></li>
+              <li><a href="">Task-4</a></li> <li><a href="">Task-5</a></li> <li><a href="">Task-6</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <aside class="sidebar">
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Articles</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </aside>
+
+  <main class="content">
+    <h1>Welcome to Lab 04 – Flexbox Navigation</h1>
+    <p>This demo shows a responsive Flexbox-based navigation system.</p>
+  </main>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

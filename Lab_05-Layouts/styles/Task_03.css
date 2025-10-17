@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: #f8f9fa;
+  line-height: 1.6;
+}
+
+/* 1.fixed header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0078d7;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Space for header */
+.header-space {
+  height: 70px;
+}
+
+/* --- 2. Layout with sticky sidebar --- */
+main {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.sidebar {
+  flex: 0 0 25%;
+}
+
+.sticky-box {
+  position: sticky;
+  top: 80px;
+  background: #c8e6c9;
+  border: 1px solid #388e3c;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.content {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.modal {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 300px;
+  background: white;
+  border: 2px solid #0078d7;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 2000;
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+/* --- 4. Z-index Demonstration --- */
+.z-layer {
+  position: relative;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.layer1,
+.layer2,
+.layer3 {
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+}
+
+.layer1 {
+  background: #f44336;
+  z-index: 1;
+}
+
+.layer2 {
+  background: #ff9800;
+  left: 50px;
+  z-index: 2;
+}
+
+.layer3 {
+  background: #4caf50;
+  left: 100px;
+  z-index: 3;
+}
+
+/* --- 5. Responsive Behavior --- */
+@media (max-width: 768px) {
+  /* Header becomes static */
+  header {
+    position: static;
+  }
+
+  .header-space {
+    height: 0;
+  }
+
+  /* Sidebar stacks below content */
+  main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: 2;
+    width: 100%;
+  }
+
+  .sticky-box {
+    position: static;
+  }
+
+  /* Modal becomes full-screen */
+/* .modal {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height: 100vh; */
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    box-shadow: none;
+    z-index: 3000; */
+    overflow: auto;
+  }
+} */

@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background: #f5f6fa;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e3a8a;
+}
+
+/*flex container*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*cards css */
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 290px;
+  flex: 1 1 30%;
+  /* align-items: center; */
+}
+
+/* Equal height cards thanks to flexbox */
+.card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.card-actions {
+  padding: 15px;
+  text-align: left;
+  margin-top: auto; /* pushes button to bottom */
+}
+
+.card-actions button {
+  background: #2563eb;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card-actions button:hover {
+  background: #1e40af;
+}
+
+/* === RESPONSIVE LAYOUT === */
+@media only screen and(max-width: 1024px) {
+  /* 2 cards per row on tablets */
+  .card {
+    width: 45%;
+  }
+}
+
+@media only screen and  (max-width: 600px) {
+  /* 1 card per row on mobile */
+  .card {
+    width: 100%;
+  }
+}

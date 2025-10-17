@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9fafb;
+  color: #111827;
+}
+
+.header {
+  text-align: center;
+  background: #1e3a8a;
+  color: white;
+  padding: 20px 10px;
+  position: relative;
+}
+
+.decor {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background: rgba(37, 99, 235, 0.3);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* 1.grid layout for overal container page*/
+.grid-container {
+  gap: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "about"
+    "projects"
+    "footer";
+}
+
+/* 2.Sidebar */
+.sidebar {
+  background: #2563eb;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* 2.flexbox for the project gallery */
+/* Projects */
+.projects {
+  grid-area: projects;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+
+.card {
+  background: #e0e7ff;
+  color: #1e3a8a;
+  flex: 1 1 calc(33.333% - 15px);
+  min-width: 200px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* mansory effect of the cards on dekstop */
+.card.tall {
+  height: 250px;
+}
+.card.wide {
+  flex: 1 1 calc(66.6% - 15px);
+}
+
+.footer {
+  grid-column: 1 / -1;
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* media query */
+@media (max-width: 1024px) {
+  .card {
+    flex: 1 1 calc(50% - 15px);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+  .project-gallery {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,49 @@
+
+
+section {
+  margin-bottom: 2rem;
+}
+
+.block {
+  display: block;
+  background: #add8e6;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.inline {
+  display: inline;
+  background: #ffd6a5;
+  padding: 5px;
+  margin: 2px;
+}
+
+.inline-block {
+  display: inline-block;
+  background: #caffbf;
+  width: 120px;
+  height: 80px;
+  margin: 5px;
+  text-align: center;
+  vertical-align: top;
+  line-height: 80px;
+  border-radius: 5px;
+}
+
+.ds-none {
+  display: none;
+  background: #ffadad;
+  padding: 10px;
+}
+
+.ds-hidden {
+  visibility: hidden;
+  background: #ffd6a5;
+  padding: 10px;
+}
+
+.ds-visible {
+  background: #9bf6ff;
+  padding: 10px;
+}

@@ -1,0 +1,101 @@
+/* Mobile base style (0px - 767px) */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  text-align: center;
+  background-color: #f9fafb;
+}
+
+.header {
+  background-color: #2563eb;
+  color: white;
+  padding: 15px;
+}
+
+.content {
+  padding: 15px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background-color: #c7d2fe;
+  padding: 30px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+/*tablet view (768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: #fef9c3;
+  }
+
+  .cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* only small screen dekstop  (1024px and up) */
+@media only screen and  (min-width: 1024px) {
+  body {
+    background-color: #bbf7d0;
+  }
+
+  .header {
+    background-color: #22c55e;
+  }
+
+  .card {
+    background-color: #a7f3d0;
+  }
+}
+/* large screen dektop (1200px and up) */
+@media only screen and  (min-width: 1200px) {
+  body {
+    background-color: #fbcfe8;
+  }
+
+  .header {
+    background-color: #db2777;
+  }
+
+  .card {
+    background-color: #f9a8d4;
+  }
+}
+
+/* extral large screen dekdtop (1400px and up) */
+@media only screen and (min-width: 1400px) {
+  body {
+    background-color: #ddd6fe;
+  }
+
+  .header {
+    background-color: #7c3aed;
+  }
+
+  .card {
+    background-color: #c4b5fd;
+  }
+}

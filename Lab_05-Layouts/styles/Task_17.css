@@ -1,0 +1,176 @@
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  background: #f4f6f9;
+  color: #1f2937;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin: 10px 0;
+}
+
+p {
+  margin: 8px 0;
+}
+
+/* Colors */
+.bg-primary {
+  background-color: #2563eb;
+}
+.bg-secondary {
+  background-color: #16a34a;
+}
+.bg-dark {
+  background-color: #1e293b;
+}
+.bg-light {
+  background-color: #f1f5f9;
+}
+
+.text-white {
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+.shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Spacing Utilities */
+.p-1 {
+  padding: 8px;
+}
+.p-2 {
+  padding: 16px;
+}
+.p-3 {
+  padding: 24px;
+}
+.mt-1 {
+  margin-top: 8px;
+}
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+/* Simple reusable card style */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Fancy badge style */
+.badge {
+  background-color: #dbeafe;
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: #1e40af;
+  margin: 6px 0;
+  font-weight: 500;
+}
+
+/* responsive utilities */
+/* Visibility */
+.show-mobile,
+.show-tablet,
+.show-desktop {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .show-mobile {
+    display: block;
+  }
+}
+
+/* Tablet*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .show-tablet {
+    display: block;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .show-desktop {
+    display: block;
+  }
+}
+
+/* text allignment */
+.text-left {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .text-md-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .text-lg-right {
+    text-align: right;
+  }
+}
+
+/* flexbox utlitities */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .flex-md-column {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .flex-lg-row {
+    flex-direction: row;
+  }
+}
+
+.box {
+  flex: 1;
+  text-align: center;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.box:hover {
+  transform: scale(1.05);
+  background-color: #3b82f6;
+}
+
+/* Responsive gap utility */
+.gap-md {
+  gap: 16px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}

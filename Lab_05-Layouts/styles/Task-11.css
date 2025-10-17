@@ -1,0 +1,124 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 30px 10px;
+}
+header h1 {
+  font-size: 2.2rem;
+  color: #003366;
+}
+header p {
+  color: #555;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* magzin aapplying grid on it  */
+.magazine-grid {
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+
+/* asymmetric grid on dekstop*/
+@media (min-width: 1025px) {
+  .magazine-grid {
+    grid-template-areas:
+      "featured featured side1"
+      "wide side2 small";
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .featured {
+    grid-area: featured;
+  }
+  .side-1 {
+    grid-area: side1;
+  }
+  .side-2 {
+    grid-area: side2;
+  }
+  .wide {
+    grid-area: wide;
+  }
+  .small {
+    grid-area: small;
+  }
+}
+
+/* symmetric gris on tablet size */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .magazine-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* single column on mobile  */
+@media (max-width: 768px) {
+  .magazine-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ARTICLE STYLES */
+article {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+article:hover {
+  transform: translateY(-5px);
+}
+article img {
+  width: 100%;
+  height: 50%;
+  display: block;
+
+}
+article h2,
+article h3 {
+  font-size: 1.5rem;
+  margin: 15px;
+  color: #003366;
+}
+article p {
+  margin: 0 15px 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* TYPOGRAPHY SCALING */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+  article h2,
+  article h3 {
+    font-size: 1.2rem;
+  }
+  article p {
+    font-size: 0.9rem;
+  }
+}
+
+
+footer {
+  text-align: center;
+  background: #003366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 6px 6px 0 0;
+}

@@ -1,0 +1,83 @@
+body {
+  font-family:'Times New Roman', Times, serif;
+  margin: 0;
+  background-color: #f9fafb;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.back-home {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.back-home a {
+  display: inline-block;
+  background-color: #2563eb;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.back-home a:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 0.8rem;
+  }
+}

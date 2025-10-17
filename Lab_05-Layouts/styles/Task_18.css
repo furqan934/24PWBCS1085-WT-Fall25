@@ -1,0 +1,129 @@
+/* This section defines the default light theme styles. */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #f9fafb;
+  color: #111827;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.header {
+  background-color: #2563eb;
+  color: white;
+  padding: 1rem;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  max-width: 600px;
+  padding: 1.5rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* This small box moves left and right as a simple animation. */
+.animated-box {
+  width: 60px;
+  height: 60px;
+  background: #2563eb;
+  margin: 10px auto;
+  border-radius: 10px;
+  animation: moveBox 2s infinite alternate;
+}
+@keyframes moveBox {
+  from { transform: translateX(-40px); }
+  to { transform: translateX(40px); }
+}
+
+.footer {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+/* This media query applies when the user prefers dark mode. */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+
+  .header {
+    background-color: #1e293b;
+  }
+
+  .card {
+    background: #1e293b;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  }
+
+  .animated-box {
+    background: #3b82f6;
+  }
+
+  .footer {
+    background: #334155;
+  }
+}
+
+/* This media query turns off animations for users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .animated-box {
+    animation: none;
+  }
+  * {
+    scroll-behavior: auto;
+    transition: none !important;
+  }
+}
+
+/* This media query increases contrast for users with visibility needs. */
+@media (prefers-contrast: more) {
+  body {
+    background-color: white;
+    color: black;
+  }
+
+  .header, .footer {
+    background-color: black;
+    color: yellow;
+  }
+
+  .card {
+    border: 3px solid black;
+    background: white;
+    color: black;
+  }
+}
+
+/* This media query provides a clean layout when printing the page. */
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+
+  .header, .footer {
+    background: none;
+    color: black;
+  }
+
+  .animated-box {
+    display: none;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+}

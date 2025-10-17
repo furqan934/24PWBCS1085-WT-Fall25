@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+}
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+section {
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 10px;
+  border-radius: 8px;
+}
+header,
+footer,
+main,
+aside {
+  padding: 10px;
+  background: #e0e0e0;
+  border: 1px solid #ccc;
+}
+header {
+  background: #b3e5fc;
+}
+footer {
+  background: #c8e6c9;
+}
+.left {
+  background: #ffe0b2;
+}
+.right {
+  background: #ffccbc;
+}
+main {
+  background: #f0f4c3;
+}
+
+/* 1.float based implementation */
+.float-layout .left {
+  float: left;
+  width: 20%;
+}
+.float-layout .right {
+  float: right;
+  width: 20%;
+}
+.float-layout main {
+  margin: 0 22%;
+}
+.float-layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2.flex box method */
+.flex-layout .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-layout .left,
+.flex-layout .right {
+  flex: 0 0 30%;
+}
+.flex-layout main {
+  flex: 1;
+}
+/* 3.drid method usage  */
+.grid-layout header {
+  grid-area: header;
+}
+.grid-layout .left {
+  grid-area: left;
+}
+.grid-layout main {
+  grid-area: main;
+}
+.grid-layout .right {
+  grid-area: right;
+}
+.grid-layout footer {
+  grid-area: footer;
+}
+
+/* mediaquery for the float layout */
+@media only screen and(max-width: 768px) {
+  .float-layout .left,
+  .float-layout .right,
+  .float-layout main,
+  .flex-layout .left,
+  .flex-layout .right,
+  .flex-layout main,
+  .grid-layout .container {
+    float: none;
+    width: 100%;
+    margin: 0;
+    display: block;
+  }
+
+   .grid-layout .container {
+      grid-template-areas:
+        "header"
+        "main"
+        "left"
+        "right"
+        "footer";
+      grid-template-columns: 1fr;
+}
+}

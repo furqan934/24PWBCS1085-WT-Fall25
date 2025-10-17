@@ -1,0 +1,84 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  overflow: hidden; 
+}
+
+/*Sidebar and Main Content*/
+.sidebar {
+  float: right;
+  width: 30%;
+  background: #e0f7fa;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.content {
+  float: left;
+  width: 65%;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+/*multi-column Text with 2 in dekstop*/
+.multi-column {
+  column-count: 2;
+  column-gap: 20px;
+}
+
+/*2.Images wrapped with text*/
+.image-wrap {
+  float: left;
+  width: 40%;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+.image-wrap img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Media Queries*/
+@media only screen and (max-width: 768px) {
+  .sidebar,
+  .content {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .multi-column {
+    column-count: 1;
+  }
+  .image-wrap {
+    float: none;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  clear: both;
+}
